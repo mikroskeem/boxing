@@ -8,13 +8,13 @@
 
 stdenv.mkDerivation rec {
   pname = "box64";
-  version = "0.1.6";
+  version = "34f7571269581bd9393f30eeaab3f46d59cb30dd";
 
   src = fetchFromGitHub {
     owner = "ptitSeb";
     repo = pname;
-    rev = "v${version}";
-    sha256 = "sha256-z7tOTQ1knpCKmpCB7rAU4bhCq5qWr2o4luhGy2AMohY=";
+    rev = version;
+    sha256 = "sha256-UUXhuDVHHK1kcP1Y1yqCT0m4xbEbxtJbKnYBasJ3OQw=";
   };
 
   nativeBuildInputs = [
