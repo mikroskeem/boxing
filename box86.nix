@@ -7,13 +7,13 @@
 
 stdenv.mkDerivation rec {
   pname = "box86";
-  version = "0.2.4";
+  version = "aa3474d06e173ad32301a394aed17499e0635843";
 
   src = fetchFromGitHub {
     owner = "ptitSeb";
     repo = pname;
-    rev = "v${version}";
-    sha256 = "sha256-ZMTn8x6PVLMHQYtqA+Eh0xISQKlKg5THRuxcY3rCx8g=";
+    rev = version;
+    sha256 = "sha256-hfjTKQoPnDQJPG7+Jnp4rmLz1Qt6dPfG8aw057JjIOs=";
   };
 
   nativeBuildInputs = [
