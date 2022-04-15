@@ -27,6 +27,7 @@ stdenv.mkDerivation rec {
   '';
 
   cmakeFlags = [
+    "-DNOGIT=ON"
     "-DARM_DYNAREC=ON"
     "-DCMAKE_C_COMPILER_TARGET=arm-linux-gnueabihf"
   ];
